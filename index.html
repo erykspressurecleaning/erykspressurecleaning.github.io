@@ -88,7 +88,7 @@ nav {
   background: var(--near-black);
   position: relative; overflow: hidden;
   display: flex; align-items: center;
-  padding: 100px 5vw 60px;
+  padding: 100px 5vw 80px;
 }
 
 .hero-bg {
@@ -119,7 +119,7 @@ nav {
   100% { transform: translateY(110vh); opacity: 0; }
 }
 
-.hero-content { position: relative; z-index: 2; max-width: 620px; }
+.hero-content { position: relative; z-index: 2; max-width: 620px; width: 100%; }
 
 .hero-eyebrow {
   font-family: 'Barlow Condensed', sans-serif;
@@ -209,11 +209,11 @@ nav {
 }
 
 .hero-stats {
-  position: absolute; bottom: 40px; left: 5vw; right: 5vw;
-  z-index: 2;
   display: flex; gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 2rem; margin-top: 2.5rem;
   border-top: 1px solid rgba(255,255,255,0.08);
+  z-index: 2; position: relative;
+  flex-wrap: wrap;
 }
 
 .stat { display: flex; flex-direction: column; gap: 2px; }
